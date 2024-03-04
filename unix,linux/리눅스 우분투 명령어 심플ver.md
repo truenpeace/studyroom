@@ -137,4 +137,4 @@
     :set showmode : 현재 모드 표시
     :set noshowmode : 현재 모드 표시 취소
     :set : set으로 설정한 모든 vi 환경 설정 값을 출력
-:set all : 모든 vi 환경 변수와 현재 값 출력
+    :set all : 모든 vi 환경 변수와 현재 값 출력
