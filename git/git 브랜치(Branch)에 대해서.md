@@ -59,4 +59,9 @@ checkout 키워드가 활용되는 명령어들이 너무 많아져서, switch �
 
 git checkout my_branch<br>
 git checkout my_branch
- 
+
+---
+### 4. 브렌치 히스토리 조회 (git log 관련)
+> git log --oneline<br>
+git log --oneline --branches<br>
+git log --oneline --branches --graph
