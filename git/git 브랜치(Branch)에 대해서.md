@@ -49,3 +49,12 @@ cf) HEAD : 여러 브랜치 중에서 현재 작업중인 브랜치가 무엇인
 ### 2. 브랜치 전환하기
 > git checkout 브치명<br>
 > git switch 브치명
+checkout 키워드가 활용되는 명령어들이 너무 많아져서, switch 라는 키워드의 명령어를 새롭게 만들어졌다고 합니다.
+---
+### 3. 새로운 브랜치 생성후, 해당 브랜치로 바로 이동하기
+> git checkout -b 새로운 브랜치명<br>
+> git switch -c 새로운 브랜치명
+새로운 브랜치를 생성하면서 이동하는 명령입니다. 즉, 위 명령어들은 아래 명령어를 한 줄로 줄인것입니다.
+> git checkout my_branch<br>
+> git checkout my_branch
+> 
