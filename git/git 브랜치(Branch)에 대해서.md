@@ -44,16 +44,18 @@ cf) HEAD : 여러 브랜치 중에서 현재 작업중인 브랜치가 무엇인
 
 ### 1. 브랜치 생성 및 조회
 > git branch : 모든 브랜치 조회<br>
-> git branch 브랜치명 : 새로운 브랜치 생성
+git branch 브랜치명 : 새로운 브랜치 생성
+
 ---
 ### 2. 브랜치 전환하기
 > git checkout 브치명<br>
-> git switch 브치명
+git switch 브치명
 checkout 키워드가 활용되는 명령어들이 너무 많아져서, switch 라는 키워드의 명령어를 새롭게 만들어졌다고 합니다.
+
 ---
 ### 3. 새로운 브랜치 생성후, 해당 브랜치로 바로 이동하기
 > git checkout -b 새로운 브랜치명<br>
-> git switch -c 새로운 브랜치명
+git switch -c 새로운 브랜치명
 
 새로운 브랜치를 생성하면서 이동하는 명령입니다. 즉, 위 명령어들은 아래 명령어를 한 줄로 줄인것입니다.
 
@@ -65,3 +67,11 @@ git checkout my_branch
 > git log --oneline<br>
 git log --oneline --branches<br>
 git log --oneline --branches --graph
+* git log --oneline : git log 를 한줄로 간략히 조회
+
+git log --oneline --branches : 모든 브랜치의 커밋 상황을 확인
+
+git log --oneline --branches --graph : 모든 브랜치의 커밋 상황을 시각적으로 표현
+(각 브랜치들의 커밋 생성순서 및 관계를 그래프 형태로 확인 가능합니다.)
+
+---
