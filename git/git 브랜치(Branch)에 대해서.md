@@ -63,15 +63,30 @@ git checkout my_branch<br>
 git checkout my_branch
 
 ---
-### 4. 브렌치 히스토리 조회 (git log 관련)
+### 4. 브랜치 히스토리 조회 (git log 관련)
 > git log --oneline<br>
 git log --oneline --branches<br>
 git log --oneline --branches --graph
 * git log --oneline : git log 를 한줄로 간략히 조회
-
-git log --oneline --branches : 모든 브랜치의 커밋 상황을 확인
-
-git log --oneline --branches --graph : 모든 브랜치의 커밋 상황을 시각적으로 표현
+* git log --oneline --branches : 모든 브랜치의 커밋 상황을 확인
+* git log --oneline --branches --graph : 모든 브랜치의 커밋 상황을 시각적으로 표현
 (각 브랜치들의 커밋 생성순서 및 관계를 그래프 형태로 확인 가능합니다.)
 
 ---
+### 5. 두 브랜치간의 Commit 차이 조회
+> git log 브랜치1..브랜치2
+* git log master ..safecal : 브랜치 사이의 차이점을 확인합니다. 여기서는 master 와 safecal 브랜치의 차이를 확인합니다.
+  * git log 브랜치1..브랜치2 : 브랜치1에는 없고 브렌치2에만 있는 커밋의 log 를 띄어줍니다.
+  * git log 브랜치2..브랜치1 : 브랜치2에는 없고 브렌치1에만 있는 커밋의 log 를 띄어줍니다.
+
+---
+### 6. 원격 레포지토리에서 브랜치 삭제하기
+> git push < remote >--delete < branch >
+
+예를 들어서 삭제하고 싶은 원격 브랜치 이름이 fix/authentication 이라면
+git push origin --delete fix/authentication
+와 같이 명령을 입력하시면 됩니다. 그러면 이제 이 브랜치는 원격에서 삭제됩니다.
+참고로 더 짧은 버전의 명령어도 있습니다.
+
+> git push < remote > :< branch >
+이렇게 쓰면 됩니다.
